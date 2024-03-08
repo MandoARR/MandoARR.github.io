@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <fieldset>
+            <legend>Datos Generales</legend>
+            <section>
+                <label for="txtNombre">Nombre: </label>
+                <input type="text" id="txtNombre" name="txtNombre">
+            </section>    
+            
+            <section>
+                <label for="txtCorreo">Correo: </label>
+                <input type="email" id="txtCorreo" name="txtCorreo">
+            </section>
+
+            <section>
+                <p>Selecciona tu genero:</p>
+                <span>Masculino<input type="radio" name="rdoGenero" id="rdoGeneroM"></span>
+                <span>Femenino<input type="radio" name="rdoGenero" id="rdoGeneroF"></span>
+                <span>Prefiero no decir<input type="radio" name="rdoGenero" id="rdoGeneroN"></span>
+            </section>
+
+            <section>            
+                <p>Satisfaccion del curso:</p>
+                
+                <input type="range" oninput="actualizaSatisfaccion()" 
+                name="nmSatisfaccion" value="10" min="1" max="10" 
+                step="1" id="nmSatisfaccion">
+                
+                <section id="scSatisfaccion">10</section>
+            </section>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea rows="5"></textarea>
+        </fieldset>
+        <footer>
+            <button onclick="guardarDatos()">Guardar!</button>
+        </footer>
+    </main>
+    <section id="scResultados">
+      
+
+    </section>
+    <script src="js/app.js" ></script>
+</body>
+
+</html>
