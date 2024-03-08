@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    font-size:25px;
+}
+
+
+
+body{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.caja{
+    display: flex;
+    background-color: lightgrey;
+    height: 480px;
+    width: 310px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    border-radius: 10px;
+}
+
+button{
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: lightblue;
+}
+
+button:active{
+    background-color: limegreen;
+}
+/*
+.cero{
+    width: 270px;
+}
+*/
+.display{
+    width:270px
+}
