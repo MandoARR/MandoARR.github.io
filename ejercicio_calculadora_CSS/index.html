@@ -1,22 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
     <link rel="stylesheet" href="CSS/estilos.css" />
 </head>
 
 <body>
-    <legend>Calculadora</legend>
-    <section class="caja">
-        <button type="input" class="display">numeros</button>
-        <button>C</button>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button class="cero">0</button>
-        <button>.</button>
-</section>
+    <fieldset>
+        <legend>Calculadora</legend>
+        <section class="caja">
+            <div>
+                <input type="text" id="display" class="display" readonly></input>
+            </div>
+            <button onclick="digitNumber('1')">1</button>
+            <button onclick="digitNumber('2')">2</button>
+            <button onclick="digitNumber('3')">3</button>
+            <button onclick="digitNumber('+')">+</button>
+            <button onclick="digitNumber('4')">4</button>
+            <button onclick="digitNumber('5')">5</button>
+            <button onclick="digitNumber('6')">6</button>
+            <button onclick="digitNumber('-')">-</button>
+            <button onclick="digitNumber('7')">7</button>
+            <button onclick="digitNumber('8')">8</button>
+            <button onclick="digitNumber('9')">9</button>
+            <button onclick="digitNumber('*')">*</button>
+            <button onclick="digitNumber('C')">C</button>
+            <button onclick="digitNumber('0')">0</button>
+            <button onclick="digitNumber('.')">.</button>
+            <button onclick="digitNumber('/')">/</button>
+            
+            <button 
+                id="igual" 
+                class="igual" 
+                onclick="digitNumber('=')">=
+            </button>
+        
+        </section>
+    </fieldset>
+    <script src="JS/app.js"></script>
 </body>
+</html>
