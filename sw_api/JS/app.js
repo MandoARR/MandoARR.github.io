@@ -24,7 +24,7 @@ function swList(json) {
 
         row.innerHTML = `<td>${specie.name}</td>
                          <td>${specie.description}</td>
-                         <td><img src="${specie.image}" class="img-thumbnail" alt="..."></<td>`;
+                         <td><img src="${specie.image}" class="img-thumbnail"></<td>`;
         document.getElementById("listSW").appendChild(row)           
     });
 }
