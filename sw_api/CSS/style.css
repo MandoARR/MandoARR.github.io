@@ -1,20 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Star+Wars&display=swap');
 
-*{
-    font-family: 'Star Wars', sans-serif;
-}
-
-body{
-    background-color: black;
-    color: white;
-}
 
 h1, h2{
-    color: yellow;
-    display: flex;
-    justify-content: center;
-}
-
-th{
-    color: darkcyan;
+    text-align: center;
+    font-family: 'Star Wars', sans-serif;
 }

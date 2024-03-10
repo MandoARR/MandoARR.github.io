@@ -1,4 +1,4 @@
-const url = "https://starwars-databank-server.vercel.app/api/v1/species/"
+const url = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
 const single = "https://starwars-databank-server.vercel.app/api/v1/species/name/Wookiee"
 
 function swApi() {
@@ -9,18 +9,27 @@ function swApi() {
         })
 }
 
+function swApiEstruc() {
+    fetch(single).then(response => response.json())
+        .then(data => {
+            //swList(data)
+            console.log(data)
+        })
+}
+
 function swList(json) {
     const species = json.data
     species.forEach(specie => {
         const row = document.createElement("tr")
 
         row.innerHTML = `<td>${specie.name}</td>
-                         <td>${specie.description}</td>`;
+                         <td>${specie.description}</td>
+                         <td><img src="${specie.image}" class="img-thumbnail" alt="..."></<td>`;
         document.getElementById("listSW").appendChild(row)           
     });
 }
 
-
+//swApiEstruc()
 swApi()
 
 
