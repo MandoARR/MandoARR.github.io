@@ -23,7 +23,6 @@ function swList(json) {
         const row = document.createElement("tr")
 
         row.innerHTML = `<td>${specie.name}</td>
-                         <td><img src="${specie.image}" class="img-thumbnail"></<td>
                          <td>${specie.description}</td>
                          `;
         document.getElementById("listSW").appendChild(row)           
