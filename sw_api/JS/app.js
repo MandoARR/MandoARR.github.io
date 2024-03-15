@@ -1,5 +1,5 @@
-const url = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
-const single = "https://starwars-databank-server.vercel.app/api/v1/species/name/Wookiee"
+const url = "https://starwars-databank-server.vercel.app/api/v1/species/"
+const url2 = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
 
 function swApi() {
     fetch(url).then(response => response.json())
