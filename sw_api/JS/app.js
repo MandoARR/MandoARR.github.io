@@ -1,22 +1,23 @@
 const url = "https://starwars-databank-server.vercel.app/api/v1/species/"
 const url2 = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
 const url3 = "https://starwars-databank-server.vercel.app/api/v1/species?page=3&limit=10/"
+const url4 = "https://starwars-databank-server.vercel.app/api/v1/species?page=4&limit=10/"
 
 function swApi() {
-    fetch(url3).then(response => response.json())
+    fetch(url4).then(response => response.json())
         .then(data => {
             swList(data)
             //console.log(data)
         })
 }
 
-function swApiEstruc() {
+/*function swApiEstruc() {
     fetch(single).then(response => response.json())
         .then(data => {
             //swList(data)
             console.log(data)
         })
-}
+}*/
 
 function swList(json) {
     const species = json.data
@@ -31,7 +32,7 @@ function swList(json) {
     });
 }
 
-//swApiEstruc()
+
 swApi()
 
 

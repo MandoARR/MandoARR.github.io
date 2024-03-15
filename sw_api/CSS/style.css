@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Star+Wars&display=swap');
 
 
-h1, h2{
+#title, #may4{
     text-align: center;
     font-family: 'Star Wars', sans-serif;
-    
+    color: yellow;
+    background-color: black;
 }
