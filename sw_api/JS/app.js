@@ -1,8 +1,9 @@
 const url = "https://starwars-databank-server.vercel.app/api/v1/species/"
 const url2 = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
+const url3 = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
 
 function swApi() {
-    fetch(url).then(response => response.json())
+    fetch(url3).then(response => response.json())
         .then(data => {
             swList(data)
             //console.log(data)
