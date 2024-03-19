@@ -14,18 +14,24 @@
     <h1 class="display-4" id="title">Rick And Morty
     </h1>
 
-    <table class="table table-primary table-striped">
-        <thead>
-            <tr>
-                <th>NOMBRE</th>
-                <th>ESTATUS</th>
-                <th>ESPECIE</th>
-                <th>IMAGEN</th>
-                <th>ORIGEN</th>
-            </tr>
-        </thead>
-        <tbody id="listRick_Morty"></tbody>
-    </table>
+    <div class="container text-enter">
+        <main id="content" class="row">
+
+        </main>
+    </div>
+
+    <section id="scTemplate" style="display: none;">
+        <div class="card" style="width: 18rem;">
+            <img src="_URL_IMAGE_" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">_NAME_PJ_</h5>
+                <p class="card-text">_NAME_SPECIE_</p>
+                <p class="card-text">_STATUS_</p>
+                <p class="card-text">_ORIGIN_</p>
+            </div>
+        </div>
+    </section>
+
     <script src="JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
