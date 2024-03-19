@@ -13,11 +13,12 @@ function personajes(json) {
 
     personajes.forEach(personaje => {
         const row = document.createElement("tr")
-
+        const origin = personaje.origin
         row.innerHTML = `<td>${personaje.name}</td>
                         <td>${personaje.status}</td>
                         <td>${personaje.species}</td>
                         <td><img src="${personaje.image}"></img></td>
+                        <td>${origin.name}</td>
                         `
         document.getElementById("listRick_Morty").appendChild(row)
     });
