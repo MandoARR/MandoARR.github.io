@@ -1,4 +1,4 @@
-const url = "https://starwars-databank-server.vercel.app/api/v1/species/"
+const url1 = "https://starwars-databank-server.vercel.app/api/v1/species/"
 const url2 = "https://starwars-databank-server.vercel.app/api/v1/species?page=2&limit=10/"
 const url3 = "https://starwars-databank-server.vercel.app/api/v1/species?page=3&limit=10/"
 const url4 = "https://starwars-databank-server.vercel.app/api/v1/species?page=4&limit=10/"
