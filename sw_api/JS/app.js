@@ -32,6 +32,10 @@ function swList(json) {
     });
 }
 
+function obtenerElemento(input){
+    return document.getElementById(input)
+    
+}
 
 swApi()
 
