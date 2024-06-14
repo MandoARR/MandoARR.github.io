@@ -1,0 +1,26 @@
+.containerClase {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.divClases_interfaz {
+    display: flex;
+    align-items: center;
+}
+
+.divAlumnoMod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.cancelUpdate {
+    flex-direction: row;
+}
+
+.AlumnosSection{
+    display: flex;
+    flex-direction: row-reverse;
+}
